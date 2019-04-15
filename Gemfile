@@ -1,11 +1,13 @@
 source "https://rubygems.org"
 
+gem 'pry'
+gem 'require_all'
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-reloader', require: false
+gem "sinatra-activerecord"
 gem 'shotgun'
-gem 'pry'
+gem 'sqlite3', '~>1.3.6'
 gem 'tux'
-gem 'require_all'
 
 group :test do
   gem 'rspec'

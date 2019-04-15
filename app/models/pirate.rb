@@ -1,16 +1,17 @@
-class Pirate
-  attr_accessor :name, :weight, :height
+class Pirate < ActiveRecord::Base
+  # attr_accessor :name, :weight, :height
+  has_many :ships
 
-  @@all = []
+  # @@all = []
 
-  def initialize(args)
-    @name = args[:name]
-    @weight = args[:weight]
-    @height = args[:height]
-    @@all << self
-  end
+  # def initialize(args)
+  #   # @name = args[:name]
+  #   # @weight = args[:weight]
+  #   # @height = args[:height]
+  #   # @@all << self
+  # end
 
-  def self.all
-    @@all
-  end
+  # def self.all
+  #   @@all
+  # end
 end
